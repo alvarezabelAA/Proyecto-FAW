@@ -1,0 +1,11 @@
+<div [formGroup]="formGroup">
+    <h1>LOGIN</h1><br>
+    <b>Ingrese Usuario:</b><br>
+
+    <input type="text" formControlName="usuarios"><br>
+    
+    <b>Ingrese contrasena:</b><br>
+
+    <input type="password" formControlName="pass"><br>
+    <button (click)="login()">Ingresar</button>
+</div>
