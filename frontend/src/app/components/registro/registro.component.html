@@ -1,0 +1,42 @@
+<div class="body">
+    <div class="login">
+        <div class="form" [formGroup]="formGroup">
+        <h1>Registro de usuario</h1>
+        <mat-form-field appearance="legacy">
+            <mat-label>Nombre</mat-label>
+            <input matInput formControlName="nombre"   autocomplete="off">
+            <mat-icon matSuffix>badge</mat-icon>
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="legacy">
+            <mat-label>Usuario</mat-label>
+            <input matInput formControlName="usuarios"  autocomplete="off">
+            <mat-icon matSuffix>account_circle</mat-icon>
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="legacy">
+            <mat-label>Password</mat-label>
+            <input type="password" matInput formControlName="pass"  autocomplete="off">
+            <mat-icon matSuffix>password</mat-icon>
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="legacy">
+            <mat-label>Fecha de nacimiento</mat-label>
+            <input type="date" matInput formControlName="fecha"  autocomplete="off">
+            <mat-icon matSuffix>calendar_today</mat-icon>
+        </mat-form-field>
+        <br>
+        <mat-radio-group aria-label="Select an option" formControlName="sexo">
+            <mat-radio-button value="Masculino">Masculino</mat-radio-button>
+            <mat-radio-button value="Femenino">Femenino</mat-radio-button>
+        </mat-radio-group>
+        <br>
+        <br>
+        <br>
+        <button type="submit" class="ancho" mat-raised-button color="primary" (click)="guardar()" >Registrar Usuario</button>
+        <br>
+        <br>
+        <button type="submit" class="ancho" mat-raised-button color="primary" routerLink="/login" >Regresar a Login</button>
+    </div>
+</div>
+</div>

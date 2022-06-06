@@ -1,0 +1,41 @@
+<app-navbar></app-navbar>
+<div class="body">
+    <div class="login">
+        <div class="form" [formGroup]="formGroup">
+        <h1>Registro de Comics</h1>
+        <mat-form-field  class="formulario" appearance="legacy" >
+            <mat-label>Nombre del Comic</mat-label>
+            <input matInput formControlName="comic"  autocomplete="off">
+            <mat-icon matSuffix>newspaper</mat-icon>
+        </mat-form-field>
+        <br>
+        <mat-form-field  class="formulario" appearance="legacy">
+            <mat-label>Año Publicado</mat-label>
+            <input matInput formControlName="year"  autocomplete="off">
+            <mat-icon matSuffix>event</mat-icon>
+        </mat-form-field>
+        <br>
+        <mat-form-field  class="formulario"  appearance="legacy">
+            <mat-label>Sinopsis</mat-label>
+            <input  matInput formControlName="sinopsis"  autocomplete="off">
+            <mat-icon matSuffix>edit</mat-icon>
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="fill">
+            <mat-label>Selecciona la Editorial</mat-label>
+            <mat-select formControlName="editorial">
+              <mat-option value="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Marvel_Logo.svg/2560px-Marvel_Logo.svg.png">MARVEL</mat-option>
+              <mat-option value="https://i2.wp.com/www.tomosygrapas.com/wp-content/uploads/2020/08/EV_tU3fXgAI0hWf.jpg?resize=747%2C420&ssl=1">DC Comics</mat-option>
+              <mat-option value="https://robqueencom.files.wordpress.com/2019/06/imagecomics.jpg">IMAGE</mat-option>
+            </mat-select>
+          </mat-form-field>
+        <br>
+        <br>
+        <button type="submit" class="ancho" mat-raised-button color="primary" (click)="guardar()" >Registrar Comic</button>
+        <br>
+        <br>
+        <button type="submit" class="ancho" mat-raised-button color="primary" routerLink="/comics" >Pagina Principal</button>
+    </div>
+    </div>
+</div>
+
