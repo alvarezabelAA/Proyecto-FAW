@@ -1,0 +1,12 @@
+<mat-toolbar color="primary">
+    <span>LIBRERIA COMICS  </span>
+    <img src="https://www.trecebits.com/wp-content/uploads/2019/12/comics-Instagram-800x445.jpg" width="100" height="50">
+    <span class="example-spacer"></span>
+    <button mat-button routerLink="/comics">Comics</button>
+    <button mat-button routerLink="/comics/agregar">Agregar</button>
+    <button mat-button routerLink="/comics/modificar/:id">Modificar</button>
+    <span class="example-spacer"></span>
+    <button (click)="logout()" mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <mat-icon>logout</mat-icon>
+      </button>
+</mat-toolbar>
